@@ -27,10 +27,10 @@
   border-radius:6px ;
   color:var(--light-cyan);
   padding:20px;
-  background-color:#FAFAFA;
+  background-color:var(--dark-blue);
   text-align:center;
   margin-inline: auto;
-  margin-block:120px 80px ;
+  margin-block:50px 80px ;
   height:fit-content;
   width:65%;
   padding-bottom:70px;
@@ -68,12 +68,15 @@
   border-radius:50%;
   width:fit-content;
   padding:10px;
-  margin:auto;
   position:absolute;
+  display: flex;
+  align-items: center;
+  right:0;
   bottom:-20px;
-  left:47%;
+  left:0;
   cursor: pointer;
   transition: 300ms ease;
+  margin-inline:auto;
 }
 .dice:hover{
   box-shadow: 0px 2px 10px var(--neon-green);
@@ -117,20 +120,19 @@
 .attribution a:active{
   text-shadow: 0px 0px 10px var(--neon-green);
 }
-@media (max-width:600px){
+@media (max-width:800px){
   .card{
     padding-bottom:40px;
   }
   .pattern-divider{
-    margin-inline:-14px
+    margin-inline:auto
   }
   .pattern-divider-mobile{
     display:block;
+    margin-inline:auto
   }
   .pattern-divider-desktop{
     display:none;
   }
-  .dice{
-    left:42%;
-  }
 }
+

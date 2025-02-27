@@ -217,7 +217,7 @@ function App() {
     try{
       const randomIndexQuote = Math.floor(Math.random() * seriesQuotes.length);
       const randomQuote = seriesQuotes[randomIndexQuote];
-      advice.textContent = `Advice: ${randomIndexQuote}`;
+      advice.textContent = `Advice: #${randomIndexQuote}`;
       quotes.textContent = `"${randomQuote.quote}"`;
       author.textContent = `-${randomQuote.author}`
     }
@@ -237,7 +237,7 @@ function App() {
   return(
     <>
       <div className="card"  id="quote-box">
-        <h6>ADVICE: #{randomIndexQuote}</h6>
+        <h6>ADVICE:  { `#${randomIndexQuote}` }</h6>
         <div className="box" id="text">
           <p id="quotes">"{ randomQuote.quote }"</p>
           <p id="author">-{ randomQuote.author }</p>
